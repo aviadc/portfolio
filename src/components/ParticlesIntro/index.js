@@ -24,7 +24,7 @@ const ParticlesIntro = () => {
         options={{
           background: {
             color: {
-              value: "#0d47a1",
+              value: "#1164A3",
             },
           },
           fpsLimit: 120,
@@ -55,7 +55,7 @@ const ParticlesIntro = () => {
               value: "#ffffff",
             },
             links: {
-              color: "#ffffff",
+              color: "#000000",
               distance: 150,
               enable: true,
               opacity: 0.5,

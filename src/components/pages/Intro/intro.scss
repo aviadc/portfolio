@@ -15,6 +15,45 @@
 .intro-inner{
   border: 1px solid red;
   width: 50%;
-  height: 50%;
+  height: 40%;
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  div{
+    font-weight: 800;
+    span{
+      color: #E31B6D;
+    }
+  }
+}
+
+.intro-mywork-button{
+  border: 1px solid #fff;
+  // width: 200px;
+  padding: 1rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  span{
+    transition: all 0.5s;
+    margin-left: 5px;
+    display: flex;
+  }
+
+  
+
+  &:hover{
+    background-color:  #04C2C9;
+    cursor: pointer;
+    span{
+      transform: rotate(90deg);
+      color: #fff;
+    }
+  }
 }
 
