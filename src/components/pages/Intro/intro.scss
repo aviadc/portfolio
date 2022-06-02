@@ -1,6 +1,6 @@
 .intro-container{
   height: 100vh;
-  border: 2px solid rebeccapurple;
+  // border: 2px solid rebeccapurple;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .intro-inner{
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 50%;
   height: 40%;
   font-size: 3rem;
@@ -42,6 +42,7 @@
   span{
     transition: all 0.5s;
     margin-left: 5px;
+    text-align: center;
     display: flex;
   }
 
