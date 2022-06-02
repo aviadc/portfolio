@@ -1,14 +1,16 @@
 import React from "react";
+import Intro from "./pages/Intro";
 import "../index.css"
+
 
 const App = ()=>{
 
 
 
   return (
-    <div>
-      hey
-    </div>
+    <>
+      <Intro />
+    </>
   )
 }
 export default App
