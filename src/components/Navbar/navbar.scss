@@ -1,0 +1,53 @@
+.navbar-container {
+  position: fixed;
+  z-index: 2;
+  background-color: #1b242f;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 500px) {
+      justify-content: flex-end;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  border: 1px solid green;
+  transition: all .3s ease-in-out;
+
+  li {
+    padding: 1rem;
+    font-size: 1.2rem;
+    a {
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: -350px;
+    flex-direction: column;
+    background-color: #333333;
+  }
+}
+
+.navbar-hamburger {
+    border: 1px solid red;
+    font-size: 2rem;
+    @media screen and (min-width: 500px) {
+        display: none;
+      }
+}
+
+.active{
+    @media screen and (max-width: 500px) {
+        top: 35px;
+    }
+}
