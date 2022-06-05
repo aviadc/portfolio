@@ -17,8 +17,8 @@
 .nav-menu {
   display: flex;
   gap: 2rem;
-  border: 1px solid green;
-  transition: all .3s ease-in-out;
+  overflow: hidden;
+  transition: all .8s ease-in-out;
 
   li {
     padding: 1rem;
@@ -30,16 +30,15 @@
 
   @media screen and (max-width: 500px) {
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: -1;
-    top: -350px;
+    top: -400px;
     flex-direction: column;
     background-color: #333333;
   }
 }
 
 .navbar-hamburger {
-    border: 1px solid red;
     font-size: 2rem;
     @media screen and (min-width: 500px) {
         display: none;
@@ -48,6 +47,6 @@
 
 .active{
     @media screen and (max-width: 500px) {
-        top: 35px;
+        top: 44px;
     }
 }
