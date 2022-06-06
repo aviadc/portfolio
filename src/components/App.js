@@ -4,6 +4,7 @@ import "../index.css";
 import About from "./pages/About";
 import Navbar from "./Navbar";
 import Work from "./pages/Work";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Intro />
       <About />
       <Work />
+      <Contact />
     </>
   );
 };
