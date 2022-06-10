@@ -1,0 +1,24 @@
+.skill-range-container{
+  height: 30px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+}
+
+.skill-range-name{
+  height: 100%;
+  width: 20%;
+  background-color: aqua;
+}
+
+.skill-rang-size{
+  position: relative;
+  width: 80%;
+
+  h4{
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    z-index: 2;
+  }
+}

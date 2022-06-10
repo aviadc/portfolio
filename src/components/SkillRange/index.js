@@ -1,13 +1,16 @@
 import React from 'react'
+import StyledSkillRange from '../styledComponents/StyledSkillRange'
+import "./skillRange.scss"
 
-const SkillRange = () => {
+const SkillRange = (props) => {
   return (
     <div className='skill-range-container'>
-      <div className='skill-name'>
-        
+      <div className='skill-range-name'>
+        {props.skillName}
       </div>
-      <div className='skill-range-inner'>
-
+      <div className='skill-rang-size'>
+        <StyledSkillRange size={props.size} delay={props.delay}></StyledSkillRange>
+        <h4>{props.size}%</h4>
       </div>
     </div>
   )

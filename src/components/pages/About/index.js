@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillRange from '../../SkillRange'
 import "./about.scss"
 
 const About = () => {
@@ -20,6 +21,13 @@ const About = () => {
           </div>
         </div>
         <div className='about-right'>
+          <SkillRange size='85' delay='0' />
+          <SkillRange size='75' delay='.1' />
+          <SkillRange size='90' delay='.2' />
+          <SkillRange size='65' delay='.3' />
+          <SkillRange size='95' delay='.4' />
+          <SkillRange size='70' delay='.5' />
+          <SkillRange size='80' delay='.6' />
         </div>
       </div>
     </div>
