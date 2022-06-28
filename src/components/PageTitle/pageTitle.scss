@@ -1,0 +1,21 @@
+.title-container {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // border: 1px solid red;
+}
+
+.title {
+  color: #fff;
+  font-size: 4rem;
+}
+
+
+.title-bottom {
+  background-color: red;
+  width: 11rem;
+  height: 5px;
+}

@@ -1,9 +1,15 @@
+.about-page{
+    height: 92vh;
+    background-color: #5f5faf;
+    width: 100%;
+    // border: 1px solid teal;
+}
+
 .about-container {
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5f5faf;
 }
 
 .about-inner{
