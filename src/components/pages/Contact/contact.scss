@@ -1,12 +1,34 @@
 .contact-container{
   height: 92vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #a2a2a2;
+  background-color: #252934;
+}
 
-  h2{
-      font-size: 3rem;
-      color: #fff;
+.contact-form{
+  height: 70%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+ 
+
+  input, textarea{
+    background-color: transparent;
+    text-decoration: none;
+    border-color: aqua;
+    font-size: 1.2rem;
   }
+
+  textarea{
+    resize: none;
+    height: 40%;
+   
+  }
+}
+
+::placeholder { /* Microsoft Edge */
+  color: red;
 }
