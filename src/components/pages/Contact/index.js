@@ -7,10 +7,10 @@ const Contact = () => {
     <div className='contact-container' id='contact'>
       <PageTitle title='Contact' />
     <form className='contact-form' >
-      <input type='text' name='name' placeholder='name' />
-      <input type='email' name='email' placeholder='email' />
-      <textarea name="message" placeholder='message' />
-      <button>Submit</button>
+      <input type='text' name='name' placeholder='Name' />
+      <input type='email' name='email' placeholder='Enter email' />
+      <textarea name="message" placeholder='Your message' />
+      <button>SUBMIT</button>
     </form>
     </div>
   )
