@@ -5,14 +5,24 @@
   justify-content: center;
   align-items: center;
   background-color: #252934;
+  color: #fff;
+
+  h5{
+    font-size: 1.6rem;
+    width: 40%;
+    text-align: center;
+  }
 }
 
 .contact-form{
-  height: 70%;
   width: 40%;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+
+  @media screen and (max-width: 500px) {
+    width: 80%;
+  }
  
   input, textarea{
     background-color: #1E242C;
@@ -27,7 +37,6 @@
 
   textarea{
     resize: none;
-    height: 40%;
   }
 
   button{
