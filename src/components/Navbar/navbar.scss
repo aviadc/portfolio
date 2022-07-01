@@ -17,7 +17,7 @@
 .nav-menu {
   display: flex;
   gap: 2rem;
-  transition: all .8s ease-in-out;
+  transition: all .4s ease-in-out;
 
   div {
     padding: 1rem;
@@ -52,6 +52,5 @@
 .active {
   @media screen and (max-width: 500px) {
     right: 0;
-
   }
 }
