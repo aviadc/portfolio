@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import SkillRange from "../../SkillRange";
+import SkillItem from "../../SkillItem";
 import "./about.scss";
 import PageTitle from "../../PageTitle";
 
@@ -25,13 +25,13 @@ const About = () => {
         </div>
         <div className='about-right'>
           <div className='skill-range-container'>
-            <SkillRange size='85' delay='0' />
-            <SkillRange size='75' delay='.1' />
-            <SkillRange size='90' delay='.2' />
-            <SkillRange size='65' delay='.3' />
-            <SkillRange size='95' delay='.4' />
-            <SkillRange size='70' delay='.5' />
-            <SkillRange size='80' delay='.6' />
+            <SkillItem size='85' delay='0' />
+            <SkillItem size='75' delay='.1' />
+            <SkillItem size='90' delay='.2' />
+            <SkillItem size='65' delay='.3' />
+            <SkillItem size='95' delay='.4' />
+            <SkillItem size='70' delay='.5' />
+            <SkillItem size='80' delay='.6' />
           </div>
         </div>
       </div>
