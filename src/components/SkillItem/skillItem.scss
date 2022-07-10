@@ -1,12 +1,15 @@
 .skill-container {
-  height: 30px;
+  padding: 3px;
+  height: 40px;
   width: 90%;
   border: 1px solid hotpink;
   display: flex;
 }
 
 .skill-left {
-  width: 20%;
+  width: 10%;
+  display: flex;
+  align-items: center ;
   svg{
     font-size: 2rem;
     fill: yellow;
@@ -14,11 +17,20 @@
 }
 
 .skill-right{
-  width: 80%;
-  .skill-bar{
-    height: 50%;
-    width: 100%;
-    background-color: grey;
+  width: 90%;
+  .skill-bar, .skill-progress{
+    height: 10px;
     border-radius: 20px;
   }
-}
+    .skill-bar{
+      background-color: grey;
+      width: 100%;
+    }
+    .skill-progress{
+      background-color: red;
+      width: 80%;
+    }
+  }
+
+
+

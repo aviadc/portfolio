@@ -1,16 +1,22 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect, useRef } from "react";
 import SkillItem from "../../SkillItem";
 import "./about.scss";
 import PageTitle from "../../PageTitle";
+import gsap from "gsap";
 
 const About = () => {
+  const tl = useRef();
+  const el = useRef();
+  const q = gsap.utils.selector(el);
   useEffect(() => {
-    // Aos.init({duration: 2000});
+    tl.current = gsap.timeline().to(q(".about-right"), {
+      y: 100,
+    }).to(q(".skill-progress"), {
+      width: '100%',
+    });
   }, []);
   return (
-    <div className='about-page' id='about'>
+    <div className='about-page' id='about' ref={el}>
       <PageTitle title='About' />
       <div className='about-container'>
         <div className='about-left'>
@@ -24,15 +30,9 @@ const About = () => {
           </div>
         </div>
         <div className='about-right'>
-          <div className='skill-range-container'>
-            <SkillItem size='85' delay='0' />
-            {/* <SkillItem size='75' delay='.1' />
-            <SkillItem size='90' delay='.2' />
-            <SkillItem size='65' delay='.3' />
-            <SkillItem size='95' delay='.4' />
-            <SkillItem size='70' delay='.5' />
-            <SkillItem size='80' delay='.6' /> */}
-          </div>
+          <SkillItem size='85' delay='0' />
+          <SkillItem size='85' delay='0' />
+          <SkillItem size='85' delay='0' />
         </div>
       </div>
     </div>
