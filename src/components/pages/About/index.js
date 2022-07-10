@@ -3,16 +3,20 @@ import SkillItem from "../../SkillItem";
 import "./about.scss";
 import PageTitle from "../../PageTitle";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const About = () => {
   const tl = useRef();
   const el = useRef();
   const q = gsap.utils.selector(el);
   useEffect(() => {
-    tl.current = gsap.timeline().to(q(".about-right"), {
-      y: 100,
-    }).to(q(".skill-progress"), {
-      width: '100%',
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".skill-progress", {
+      scrollTrigger: {
+        trigger: "contact-container",
+        toggleActions: "restart none none none"
+      },
+      width: '90%',
     });
   }, []);
   return (
@@ -30,9 +34,8 @@ const About = () => {
           </div>
         </div>
         <div className='about-right'>
-          <SkillItem size='85' delay='0' />
-          <SkillItem size='85' delay='0' />
-          <SkillItem size='85' delay='0' />
+          <SkillItem size='85' delay='0' className="html-skill" />
+
         </div>
       </div>
     </div>
