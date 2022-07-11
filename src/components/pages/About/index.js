@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import SkillItem from "../../SkillItem";
 import "./about.scss";
 import PageTitle from "../../PageTitle";
+import { FaHtml5 , FaCss3, FaReact , FaJsSquare, FaNodeJs, FaVuejs } from "react-icons/fa";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -34,8 +35,12 @@ const About = () => {
           </div>
         </div>
         <div className='about-right'>
-          <SkillItem size='85' delay='0' className="html-skill" />
-
+          <SkillItem skillIcon={<FaHtml5 style={{fill: '#e34c26'}} />} skillName="HTML" precentage=""/>
+          <SkillItem skillIcon={<FaCss3 style={{fill: '#264de4'}} />} skillName="CSS3"  precentage=""/>
+          <SkillItem skillIcon={<FaJsSquare style={{fill: '#f0db4f'}} />} skillName="JAVASCRIPT" precentage=""/>
+          <SkillItem skillIcon={<FaReact style={{fill: '#00d8ff'}} />} skillName="REACT" precentage=""/>
+          <SkillItem skillIcon={<FaNodeJs style={{fill: '#509941'}} />} skillName="Node.js" precentage=""/>
+          <SkillItem skillIcon={<FaVuejs style={{fill: '#42b883'}} />} skillName="Vue.js" precentage=""/>
         </div>
       </div>
     </div>

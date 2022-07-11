@@ -1,20 +1,20 @@
 import React from "react";
-import { FaHtml5 } from "react-icons/fa";
+
 import "./skillItem.scss";
 
-const SkillItem = () => {
+const SkillItem = (props) => {
   return (
     <div className='skill-container'>
-      <div className='skill-left'>
-        <FaHtml5 />
+      <div className='skill-left' >
+        {props.skillIcon}
       </div>
       <div className='skill-right'>
-        <div className='skill-name'>HTML</div>
+        <div className='skill-name'>{props.skillName}</div>
         <div className='skill-bar'>
           <div className='skill-progress'></div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
