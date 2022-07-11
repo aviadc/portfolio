@@ -18,17 +18,25 @@
 .skill-right{
   width: 90%;
   .skill-bar, .skill-progress{
-    height: 10px;
+    height: 17px;
     border-radius: 20px;
   }
     .skill-bar{
+      position: relative;
       background-color: grey;
       width: 100%;
-    }
+  
     .skill-progress{
       background-color: red;
       width: 0%;
     }
+    span{
+      position: absolute;
+      right: 2px;
+      top:-2px;
+      z-index: 2;
+    }
+  }
   }
 
 

@@ -12,6 +12,7 @@ const SkillItem = (props) => {
         <div className='skill-name'>{props.skillName}</div>
         <div className='skill-bar'>
           <div className='skill-progress'></div>
+         <span>{props.precentage}</span> 
         </div>
       </div>
     </div >

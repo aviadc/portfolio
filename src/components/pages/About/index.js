@@ -5,6 +5,7 @@ import PageTitle from "../../PageTitle";
 import { FaHtml5 , FaCss3, FaReact , FaJsSquare, FaNodeJs, FaVuejs } from "react-icons/fa";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import me2 from "../../../assets/me2.jpeg"
 
 const About = () => {
   const tl = useRef();
@@ -22,10 +23,12 @@ const About = () => {
   }, []);
   return (
     <div className='about-page' id='about' ref={el}>
-      <PageTitle title='About' />
+      <PageTitle title='About' style={{color: "black"}} />
       <div className='about-container'>
         <div className='about-left'>
-          <div className='about-image'></div>
+          <div className='about-image'>
+            <img src={me2} alt='profile-image'/>
+          </div>
           <div className='about-description'>
             <h2>who I am?</h2>
             <div>
@@ -35,7 +38,7 @@ const About = () => {
           </div>
         </div>
         <div className='about-right'>
-          <SkillItem skillIcon={<FaHtml5 style={{fill: '#e34c26'}} />} skillName="HTML" precentage=""/>
+          <SkillItem skillIcon={<FaHtml5 style={{fill: '#e34c26'}} />} skillName="HTML" precentage="90%"/>
           <SkillItem skillIcon={<FaCss3 style={{fill: '#264de4'}} />} skillName="CSS3"  precentage=""/>
           <SkillItem skillIcon={<FaJsSquare style={{fill: '#f0db4f'}} />} skillName="JAVASCRIPT" precentage=""/>
           <SkillItem skillIcon={<FaReact style={{fill: '#00d8ff'}} />} skillName="REACT" precentage=""/>

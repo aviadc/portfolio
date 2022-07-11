@@ -1,6 +1,6 @@
 .about-page{
     height: 92vh;
-    background-color: #5f5faf;
+    background-color: #F5F5F5;
     width: 100%;
 }
 
@@ -28,10 +28,11 @@
 }
 
 .about-image {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 3px solid green
+    img{
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        width: 300px;
+        height: 300px;
+    }
 }
 
 .about-description{

@@ -1,11 +1,15 @@
 import React from 'react'
+import PageTitle from "../../PageTitle"
 import "./work.scss"
 
 const Work = () => {
   return (
-    <div className='work-container' id='work'>
-        <h2>Work</h2>
-        </div>
+    <div className='work-page' id='work'>
+      <PageTitle title='Projects' style={{color: "black"}} />
+      <div className='work-container'>
+
+      </div>
+    </div>
   )
 }
 
