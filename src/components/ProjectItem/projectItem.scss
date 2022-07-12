@@ -3,9 +3,7 @@
   height: 400px;
   width: 400px;
   background-color: grey;
-  text-align: center;
   transition: all .5s ease-in-out;
-  display: flex;
   overflow: hidden;
 
   &:hover .project-item-inner {
@@ -13,13 +11,11 @@
   }
 
   &:hover .button-code {
-    visibility: visible;
-    top: 20px;
+    top: 4rem;
   }
 
   &:hover .button-website {
-    visibility: visible;
-    bottom: 20px;
+    bottom: 4rem;
   }
 
   &:hover {
@@ -27,15 +23,27 @@
   }
 
   button {
-    font-size: 1rem;
+    font-size: 1.6rem;
+    width: 9rem;
     position: absolute;
     border: 1px solid #E31B6D;
+    left: 50%;
+    margin-left: -4.5rem;
     transition: all 0.5s ease-in-out;
 
-    &:hover{
+    &:hover {
       background-color: #E31B6D;
       color: #fff;
     }
+  }
+
+  .button-code {
+    top: -3.5rem;
+    z-index: 3;
+  }
+
+  .button-website {
+    bottom: -5.5rem;
   }
 
 }
@@ -54,14 +62,3 @@
 
 
 
-
-
-.button-website {
-  bottom: -45px;
-  right: 21%;
-}
-
-.button-code {
-  top: -46px;
-  right: 30%;
-}
