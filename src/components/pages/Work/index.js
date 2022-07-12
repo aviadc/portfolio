@@ -9,7 +9,12 @@ const Work = () => {
     <div className='work-page' id='work'>
       <PageTitle title='Projects' style={{color: "black"}} />
       <div className='work-container'>
-        <ProjectItem img ={me2}/>
+        <ProjectItem img ='https://images.unsplash.com/photo-1652521887861-5ec257b41e0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'/>
+        <ProjectItem img ='https://images.unsplash.com/photo-1652521887861-5ec257b41e0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'/>
+        <ProjectItem img ='https://images.unsplash.com/photo-1652521887861-5ec257b41e0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'/>
+        <ProjectItem img ='https://images.unsplash.com/photo-1652521887861-5ec257b41e0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'/>
+        <ProjectItem img ='https://images.unsplash.com/photo-1652521887861-5ec257b41e0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'/>
+        <ProjectItem img ='https://images.unsplash.com/photo-1652521887861-5ec257b41e0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'/>
         <ProjectItem img ={me2}/>
         <ProjectItem img ={me2}/>
         <ProjectItem img ={me2}/>
