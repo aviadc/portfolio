@@ -1,12 +1,12 @@
 import React from 'react'
-import ParticlesIntro from '../../ParticlesIntro'
-import { FiArrowRight  } from 'react-icons/fi'
+import { Link } from "react-scroll";
+import { FiArrowRight } from 'react-icons/fi'
 import videoBg from "../../../assets/videos/background-video.mp4"
 
 import "./intro.scss"
 
 const Intro = () => {
-  // const [isHover, setIsHover] = useState(false);
+  const offsetInPixels = (window.innerHeight / 100) * 8;
 
   return (
     <>
@@ -17,8 +17,17 @@ const Intro = () => {
         <div className='intro-inner'>
           <div>Hello, I'm  <span>Aviad Cohen.</span></div>
           <div>I'm a Full-Stack Web Developer.</div>
-         <a href='#work'> <div className='intro-mywork-button'>
-          view my work <span><FiArrowRight /></span></div> </a>
+          <Link
+            to='about'
+            spy={true}
+            smooth={true}
+            offset={-offsetInPixels}
+            duration={0}
+            className='nav-link'
+          ><div className='intro-mywork-button'>
+              view my work <span><FiArrowRight /></span></div> </Link>
+          {/* <a href='#about'> <div className='intro-mywork-button'>
+          view my work <span><FiArrowRight /></span></div> </a> */}
         </div>
       </div>
     </>

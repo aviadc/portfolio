@@ -9,8 +9,8 @@ import Contact from "./pages/Contact";
 const App = () => {
   return (
     <>
-      <Navbar />
       <Intro />
+      <Navbar />
       <About />
       <Work />
       <Contact />

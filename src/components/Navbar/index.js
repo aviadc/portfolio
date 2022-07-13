@@ -5,7 +5,7 @@ import "./navbar.scss";
 
 const Navbar = () => {
   const offsetInPixels = (window.innerHeight / 100) * 8;
-  console.log(offsetInPixels, "offset");
+  // console.log(offsetInPixels, "offset");
   // console.log(8vh)
 
   const [hamburgerClick, setHamburgerClick] = useState(false);
